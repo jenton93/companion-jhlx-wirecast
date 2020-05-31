@@ -249,8 +249,7 @@ class instance extends instance_skel {
 				var info = data.toString().split(/ /);
 
 					if (info[0].match("Wirecast")) {
-						this.log('debug', 'Connected to wirecast' + info[0]);
-						//this.socket.send("UPDATES ON\r\n");
+						this.log('debug', 'Connected to wirecast');
 
 						this.initFeedbacks();
 						this.initVariables();
@@ -258,9 +257,7 @@ class instance extends instance_skel {
 						this.checkFeedbacks('transIndx');
 						this.checkFeedbacks('isrecording');
 						this.checkFeedbacks('isbroadcasting');
-						//this.checkFeedbacks('state_color');
 						this.updateState();
-					//	this.updateMode();
 						this.updateLayer();
 						
 
@@ -403,7 +400,6 @@ class instance extends instance_skel {
 						this.checkFeedbacks('isrecording');
 					}
 				}else if (val.match("pindx")) {
-				this.log('debug', 'i get here = ' + val);
 				var layer = val.charAt(5);
 				var state = val.slice(val.indexOf("=")+1);
 					if (this.feedbackstate.preview[layer] != state) 
@@ -413,7 +409,6 @@ class instance extends instance_skel {
 						this.updateLayer();
 					}
 				}else if (val.match("lindx")) {
-					this.log('debug', 'i get here = ' + val);
 					var layer = val.charAt(5);
 					var state = val.slice(val.indexOf("=")+1);
 						if (this.feedbackstate.program[layer] != state) 
