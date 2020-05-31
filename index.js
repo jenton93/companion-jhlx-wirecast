@@ -245,7 +245,7 @@ class instance extends instance_skel {
 
 			this.socket.on('receiveline', (data) => {
 				
-				this.log('debug', data.toString());
+				//this.log('debug', data.toString());
 				var info = data.toString().split(/ /);
 
 					if (info[0].match("Wirecast")) {
