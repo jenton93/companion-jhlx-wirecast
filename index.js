@@ -321,34 +321,7 @@ class instance extends instance_skel {
 	initVariables() {
 
 		var variables = [
-			{
-				label: 'State of timer (Running, Paused, Stopped)',
-				name: 'state'
-			},
-			{
-				label: 'Mode of display (TIMER, CLOCK, BLACK, TEST)',
-				name: 'mode'
-			},
-			{
-				label: 'Current time of timer (hh:mm:ss)',
-				name: 'time'
-			},
-			{
-				label: 'Current time of timer (hh:mm)',
-				name: 'time_hm'
-			},
-			{
-				label: 'Current time of timer (hours)',
-				name: 'time_h'
-			},
-			{
-				label: 'Current time of timer (minutes)',
-				name: 'time_m'
-			},
-			{
-				label: 'Current time of timer (seconds)',
-				name: 'time_s'
-			},
+			
 		];
 
 		this.setVariableDefinitions(variables);
