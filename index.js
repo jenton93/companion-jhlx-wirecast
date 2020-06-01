@@ -134,22 +134,6 @@ class instance extends instance_skel {
 				cmd = 'SHOT=' + opt.layer + '&' +opt.sindex;
 				break;
 
-			case 'jog':
-				cmd = 'JOG ' + opt.minutes;
-				break;
-
-			case 'updateMode':
-				cmd = 'UPDATEMODE ' + opt.mode;
-				break;
-
-			case 'resetT':
-				cmd = 'RESET ' + opt.time;
-				break;
-
-			case 'displayM':
-				cmd = 'DISPLAY ' + opt.mode;
-				break;
-
 		}
 
 		if (cmd !== undefined) {
